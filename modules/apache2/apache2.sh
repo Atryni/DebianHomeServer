@@ -6,8 +6,8 @@ DIR=`dirname "$0"`
 
 sudo usermod -a -G www-data pi
 
-sudo a2enmod rewrite proxy proxy_http
+sudo a2enmod rewrite proxy proxy_http default-ssl headers env dir mime
 
-sudo rm /etc/apache2/sites-available/000-default.conf
+sudo rm /etc/apache2/sites-enabled/000-default.conf
 
 sudo service apache2 restart

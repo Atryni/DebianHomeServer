@@ -11,3 +11,4 @@ rm webmin-current.deb
 
 sudo cp ${DIR}/webmin.pi.conf /etc/apache2/sites-available/
 sudo ln -s /etc/apache2/sites-available/webmin.pi.conf /etc/apache2/sites-enabled/webmin.pi.conf
+sudo service apache2 restart

@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>HomeUsable RPi</title>
+    <title>HomeUsable pi</title>
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -30,7 +30,7 @@
             <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto" id="rpiNavbarLinks">
+            <ul class="navbar-nav ml-auto" id="piNavbarLinks">
             </ul>
         </div>
     </div>
@@ -41,13 +41,13 @@
     <div class="container">
         <h1 class="text-uppercase mb-0">HomeUsable RaspberryPi WebLinks</h1>
         <hr class="star-light">
-        <h2 class="font-weight-light mb-0">Open Rpi WebLinks</h2>
+        <h2 class="font-weight-light mb-0">Open pi WebLinks</h2>
     </div>
 </header>
 
 <section class="portfolio" id="portfolio">
     <div class="container">
-        <div class="row" id="rpiItemLinks">
+        <div class="row" id="piItemLinks">
         </div>
     </div>
 </section>
@@ -71,17 +71,17 @@
         const links = [
             {
                 name: 'PiHole',
-                link: 'http://pihole.rpi/',
+                link: 'http://pihole.pi/',
                 image: 'cake'
             },
             {
                 name: 'WebMin',
-                link: 'http://webmin.rpi/',
+                link: 'http://webmin.pi/',
                 image: 'submarine'
             },
             {
                 name: 'ownCloud',
-                link: 'http://owncloud.rpi/',
+                link: 'http://owncloud.pi/',
                 image: 'safe'
             }
         ];
@@ -104,8 +104,8 @@
                 '</a>' +
                 '</div>';
 
-            $('#rpiNavbarLinks').append(navbarLink);
-            $('#rpiItemLinks').append(itemLink);
+            $('#piNavbarLinks').append(navbarLink);
+            $('#piItemLinks').append(itemLink);
         }
 
         links.forEach(addLink);

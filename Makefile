@@ -1,11 +1,14 @@
-install-dashboard: update-addUserToApache2Group
+install-dashboard:
 	modules/dashboard/dashboard.sh
 
-install-pihole: update-addUserToApache2Group
+install-pihole:
 	modules/pihole/pihole.sh
 
-update-system:
-	modules/systemUpdate/update.sh
+install-webmin:
+    modules/webmin/webmin.sh
 
-update-addUserToApache2Group:
-	modules/systemUpdate/addUserToApache2Group.sh
+install-apache2:
+	modules/apache2/apache2.sh
+
+update-system:
+	modules/system/update.sh

@@ -4,8 +4,9 @@ echo "The present working directory is `pwd`"
 
 DIR=`dirname "$0"`
 
-sudo mkdir /var/www/pihole.rpi
-sudo chown pi:pi /var/www/pihole.rpi
+curl -sSL https://install.pi-hole.net | bash
 
-sudo cp ${DIR}/pihole.rpi.conf /etc/apache2/sites-available/
-sudo ln -s /etc/apache2/sites-available/pihole.rpi.conf /etc/apache2/sites-enabled/pihole.rpi.conf
+sudo cp ${DIR}/pihole.pi.conf /etc/apache2/sites-available/
+sudo ln -s /etc/apache2/sites-available/pihole.pi.conf /etc/apache2/sites-enabled/pihole.pi.conf
+
+sudo ln -s /var/www/html/admin /var/www/pihole.pi
